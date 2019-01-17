@@ -1,0 +1,23 @@
+{
+    "name": "ProvisioningStatus1",
+    "fields": [
+        {
+            "fieldName": "pvsid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "serialnumber",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190117133906",
+    "entityTableName": "provisioning_status_1",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
