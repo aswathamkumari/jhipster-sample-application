@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="provisioningStatus">
+            <h2><span>Provisioning Status</span> {{provisioningStatus.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Pvsid</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.pvsid}}</span>
+                </dd>
+                <dt><span>Serialnumber</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.serialnumber}}</span>
+                </dd>
+                <dt><span>Username</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.username}}</span>
+                </dd>
+                <dt><span>Siteid</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.siteid}}</span>
+                </dd>
+                <dt><span>Environment</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.environment}}</span>
+                </dd>
+                <dt><span>Operation</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.operation}}</span>
+                </dd>
+                <dt><span>Status</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.status}}</span>
+                </dd>
+                <dt><span>Level</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.level}}</span>
+                </dd>
+                <dt><span>Timestamp</span></dt>
+                <dd>
+                    <span>{{provisioningStatus.timestamp}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/provisioning-status', provisioningStatus.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

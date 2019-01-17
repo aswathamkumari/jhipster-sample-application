@@ -1,0 +1,13 @@
+entity ProvisioningStatus {
+	pvsid String,
+    serialnumber String,
+    username String,
+    siteid Long,
+    environment String,
+    operation String,
+    status Long,
+    level Long,
+    timestamp Instant
+    
+}
+
