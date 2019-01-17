@@ -1,0 +1,51 @@
+{
+    "name": "ProvisioningStatus",
+    "fields": [
+        {
+            "fieldName": "pvsid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "serialnumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "siteid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "environment",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "operation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "level",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "timestamp",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190117133905",
+    "entityTableName": "provisioning_status",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
